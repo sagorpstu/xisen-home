@@ -33,6 +33,17 @@ $(document).ready(function () {
     new WOW().init();
     
     // ?Wow Animation
+    
+    // ?Fixed Navbar
+  $(window).scroll(function () {
+    var ourwindow = $(this).scrollTop();
+
+    if (ourwindow > 52) {
+      $("body").addClass("fixed_nav");
+    } else {
+      $("body").removeClass("fixed_nav");
+    }
+  });
 
 
 });
